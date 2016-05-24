@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.img {
+  display: none;
+  position: fixed;
+}
+
+.img:target {
+  display: table;
+  position: absolute;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+</style>
+</head>
+<body>
+<hr>
+<div align="center">
+<button type="button"><a href="#id01">Image 1</a></button>
+<button type="button"><a href="#id02">Image 2</a></button>
+<button type="button"><a href="#id03">Image 3</a></button>
+<button type="button"><a href="#id04">Image 4</a></button>
+<button type="button"><a href="#id05">Image 5</a></button>
+</div>
+<hr>
+<div id="id01" class="img" style="width:100%;height:auto">
+	<img src="img/1.png" style="width:100%;height:auto">
+	<hr>
+	<div align="center">
+		<button type="button"><a href="#id02" class="button">Next</a></button>
+		<button type="button"><a href="#id05" class="button">Previous</a></button>
+	</div>
+	<hr>
+</div>
+<div id="id02" class="img" style="width:100%;height:auto">
+	<img src="img/2.png" style="width:100%;height:auto">
+	<hr>
+	<div align="center">
+		<button type="button"><a href="#id03" class="button">Next</a></button>
+		<button type="button"><a href="#id01" class="button">Previous</a></button>	
+	</div>
+	<hr>
+</div>
+<div id="id03" class="img" style="width:100%;height:auto">
+	<img src="img/3.png" style="width:100%;height:auto">
+	<hr>
+	<div align="center">
+		<button type="button"><a href="#id04" class="button">Next</a></button>
+		<button type="button"><a href="#id02" class="button">Previous</a></button>
+	</div
+	<hr>
+</div>
+<div id="id04" class="img" style="width:100%;height:auto">
+	<img src="img/4.png" style="width:100%;height:auto">
+	<hr>
+	<div align="center">
+		<button type="button"><a href="#id05" class="button">Next</a></button>
+		<button type="button"><a href="#id03" class="button">Previous</a></button>
+	</div>
+	<hr>
+</div>
+<div id="id05" class="img" style="width:100%;height:auto">
+	<img src="img/5.png" style="width:100%;height:auto">
+	<hr>
+	<div align="center">
+		<button type="button"><a href="#id01" class="button">Next</a></button>
+		<button type="button"><a href="#id04" class="button">Previous</a></button>
+	</div>
+	<hr>
+</div>
+</body>
+</html>
